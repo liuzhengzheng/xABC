@@ -89,7 +89,7 @@
 // ### 三元操作
 {
   type getType<T> = T extends Function ? T : never;
-  const a = function() {};
+  const a = function () { };
   type A = getType<typeof a>;
   // ok
   const b: A = () => undefined;
@@ -100,9 +100,9 @@
   type getArgumentType<T> = T extends (params: infer A) => any
     ? A
     : never;
-  const a = function(info: { age: number, name: string }) {}
+  const a = function (info: { age: number, name: string }) { }
   type params = getArgumentType<typeof a>;
-  
+
   // ok
   const info: params = {
     age: 2,

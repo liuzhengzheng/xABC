@@ -1,9 +1,10 @@
 // # 配置
 {
   const config = {
+    // 编辑器配置
     "compilerOptions": {
       "baseUrl": ".",
-      "outDir": "build/dist",
+      "outDir": "build/dist", // 输出js源码目录
       "module": "esNext",
       "target": "es3",
       "lib": ["esnext", "dom"],
@@ -13,7 +14,7 @@
       "moduleResolution": "node",
       "noEmitHelpers": true,
       "rootDir": ".",
-      "experimentalDecorators": true,
+      "experimentalDecorators": true, // 装饰器
       "forceConsistentCasingInFileNames": true,
       "noImplicitReturns": true,
       "noImplicitThis": true,
@@ -30,6 +31,7 @@
         "tslib": ["./node_modules/tslib/tslib"]
       }
     },
+    // 排除
     "exclude": [
       "node_modules",
       "build",

@@ -6,7 +6,7 @@
 
 {
   // syntax
-  // let variableName: DataType = value;
+  // let variableName: DataType = value; 推荐写法
   // let variableName = <DataType>value;
 
   // basic
@@ -130,12 +130,12 @@
     // wrong
     return [{ age: 2 }];
   }
-  
+
   // wrong
   function fun3(): void {
     return 2;
   }
-  
+
   // well
   // ok
   const c: () => void = () => 2;
